@@ -208,8 +208,19 @@ section{
 .navbar-small .fa-inverse{
     color: #333;
 }
+
+.clicked-burger .fa-inverse{
+    color: #333;
+}
+
 .navbar-small #linkedin-link{
-    color: #fff;
+    color: #fff!important;
+    margin: -12px 0 0 0;
+    opacity: 0.75;
+}
+
+.clicked-burger #linkedin-link{
+    color: #fff!important;
     margin: -12px 0 0 0;
     opacity: 0.75;
 }
