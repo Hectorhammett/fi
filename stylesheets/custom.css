@@ -425,6 +425,11 @@ section{
     color: #fff;
 }
 
+#section-4 .container{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 #section-4 .filter{
     background-color: rgba(0, 204, 204, 0.5);
     position: absolute;
