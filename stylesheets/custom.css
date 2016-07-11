@@ -27,14 +27,15 @@ section{
     font-size: 50px;
     padding: 0 30px 10px 30px;
     margin-bottom: 50px;
-    border-bottom: 5px solid pink;
     border-image: linear-gradient(
-    to right, 
-    #00CCCC 0%, 
-    #00CCCC 50%, 
-    #0099CC 50%, 
-    #0099CC 100%
-  ) 10;
+        to right, 
+        #00CCCC 0%, 
+        #00CCCC 50%, 
+        #0099CC 50%, 
+        #0099CC 100%
+    ) 10;
+    border-style: solid;
+    border-width: 0 0 5px 0;
 }
 
 .section-header-white{
@@ -47,14 +48,15 @@ section{
     font-size: 50px;
     padding: 0 30px 10px 30px;
     margin-bottom: 50px;
-    border-bottom: 5px solid pink;
     border-image: linear-gradient(
-    to right, 
-    #fefefe 0%, 
-    #fefefe 50%, 
-    #DBDBDC 50%, 
-    #DBDBDC 100%
-  ) 10;
+        to right, 
+        #fefefe 0%, 
+        #fefefe 50%, 
+        #DBDBDC 50%, 
+        #DBDBDC 100%
+    ) 10;
+    border-style: solid;
+    border-width: 0 0 5px 0;
 }
 
 .subheader{
@@ -114,6 +116,12 @@ section{
     border-radius: 0px;
     color:#fff;
     padding:10px 35px
+}
+
+@media(max-width:570px){
+    .section-header span,.section-header-white span{
+        font-size: 6vw;
+    }
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -304,6 +312,22 @@ section{
     height: 100%;
 }
 
+@media(max-width:767px){
+    #section-1 .centered-div-section{
+        width:100vw;
+    }
+
+    #translating{
+        font-size: 9vw; 
+    }
+
+    #into{
+        font-size: 12vw;
+        display: block;
+        letter-spacing: -6px;
+    }
+}
+
 /*----------------------------------------------------------------------------------------------*/
 
 /*
@@ -332,6 +356,12 @@ section{
 
 #section-2 p{
     margin-bottom:25px;
+}
+
+@media(max-width:767px){
+    #section-2{
+        font-size: 20px;
+    }
 }
 
 /*------------------- Section 3-----------------------------*/
@@ -452,11 +482,18 @@ h6{
     border: none;
     border-bottom: 3px solid #fff;
     border-radius: 0; 
-    -webkit-box-shadow: transparent; 
-    box-shadow: transparent; 
+    -webkit-box-shadow:none; 
+    box-shadow: none; 
     -webkit-transition: none; 
     -o-transition: none;
     transition: none;
+}
+
+.form-control:focus {
+    border-color: #fff; 
+    outline: none; 
+    -webkit-box-shadow: none; 
+    box-shadow:none; 
 }
 
 .form-horizontal .control-label {
