@@ -16,6 +16,8 @@ $("a").on('click', function(event) {
     // Prevent default anchor click behavior
     event.preventDefault();
 
+    $(".navbar-toggle").click();
+
     // Store hash
     var hash = this.hash;
 
