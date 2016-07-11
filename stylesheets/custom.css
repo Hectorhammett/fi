@@ -168,7 +168,7 @@ section{
 .navbar-transparent .nav.navbar-nav.navbar-right li a{
     color: #fff;
     font-size:20px;
-    font-weight: 700;
+    font-weight: 100;
     letter-spacing: -1px;
     transition: all 0.25s ease;
 }
@@ -176,7 +176,7 @@ section{
 .navbar-small .nav.navbar-nav.navbar-right li a{
     color: #333;
     font-size:15px;
-    font-weight: 700;
+    font-weight: 100;
     letter-spacing: -1px;
     transition: all 0.25s ease;
 }
