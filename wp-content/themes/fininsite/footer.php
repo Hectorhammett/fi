@@ -90,10 +90,11 @@
             </section>
             <!-- Fifth section ends -->
         <!-- Ends Body -->
-
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap/js/bootstrap.min.js"></script>
 <?php if(is_page_template("page-home.php")): ?>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+<?php else: ?>
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/mainBlog.js"></script>
 <?php endif ?>
 </html>
