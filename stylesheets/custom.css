@@ -376,6 +376,14 @@ section{
     }
 }
 
+.bio-img{
+    max-height: 275px;
+}
+@media(max-width:992px){
+    .bio-name{
+        text-align: center;
+    }
+}
 /*------------------- Section 3-----------------------------*/
 
 #section-3{
