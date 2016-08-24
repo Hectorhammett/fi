@@ -15,6 +15,7 @@ if(isset($_POST['submit'])){
     echo 'Thank you! We will be in touch soon.';
 }
 else{
-    header("https://www.fininsite.com");
+    header("Location: https://www.fininsite.com"); /* Redirect browser */
+    exit();
 }
 ?>
