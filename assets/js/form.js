@@ -1,4 +1,10 @@
 $("#form-email").submit(function(e){
   e.preventDefault();
-  swal("Here's a message!", "It's pretty, isn't it?");
+  $.post('',function(response){
+    swal("Thank You!", "We will be in touch soon.");
+  })
+  .fail(function(response){
+    swal("Oops...", "Something went wrong!", "error");
+    // console.log(response.responseText);
+  })
 })
