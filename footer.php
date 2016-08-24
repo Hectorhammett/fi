@@ -40,7 +40,7 @@ if(isset($_POST['submit'])){
                     <div class="col-sm-12 text-center">
                         <h1 class="section-header-white inverted"><span>CONTACT</span></h1>
                     </div>
-                    <form action="#" method="post">
+                    <form action="#" method="post" id="form-email"/>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
@@ -104,6 +104,7 @@ if(isset($_POST['submit'])){
 
         <!-- Ends Body -->
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/form.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/sa/sa.min.js"></script>
 <?php if(is_page_template("page-home.php")): ?>
