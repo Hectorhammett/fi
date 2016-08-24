@@ -1,345 +1,3 @@
-/*
-Theme Name: Financial Insite
-Theme URI: http://underscores.me/
-Author: DWS
-Author URI: http://dashwebsolutions.com
-Description: A custom wordpress theme for the company Financial Insite.
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: fininsite
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Financial Insite is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Navigation
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
-# Custom Theme
---------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-		list-style: none;
-	}
-}
-
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
-}
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
-}
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
-}
-
-/* Do not show the outline on the skip link target. */
-#content[tabindex="-1"]:focus {
-	outline: 0;
-}
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
-}
-
-.alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
-}
-
-.aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-	content: "";
-	display: table;
-	table-layout: fixed;
-}
-
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-	clear: both;
-}
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
-}
-
-/* Make sure select elements fit in widgets. */
-.widget select {
-	max-width: 100%;
-}
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-.sticky {
-	display: block;
-}
-
-.hentry {
-	margin: 0 0 1.5em;
-}
-
-.byline,
-.updated:not(.published) {
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-.comment-content a {
-	word-wrap: break-word;
-}
-
-.bypostauthor {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
-}
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-	max-width: 100%;
-}
-
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
-.wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
-}
-
-.wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
-}
-
-.wp-caption-text {
-	text-align: center;
-}
-
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
-.gallery {
-	margin-bottom: 1.5em;
-}
-
-.gallery-item {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-	max-width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
-}
-
-.gallery-columns-4 .gallery-item {
-	max-width: 25%;
-}
-
-.gallery-columns-5 .gallery-item {
-	max-width: 20%;
-}
-
-.gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
-}
-
-.gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
-}
-
-.gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
-}
-
-.gallery-caption {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-# Custom Theme
---------------------------------------------------------------*/
-
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -494,8 +152,8 @@ section{
 }
 
 .navbar-transparent{
-    background-color: rgba(0, 153, 204, 0.20);
-    color:#fff;
+    background-color: #fff;
+    color:#333;
     transition: all 0.25s ease;
 }
 
@@ -526,8 +184,8 @@ section{
 }
 
 .navbar-transparent .nav.navbar-nav.navbar-right li a{
-    color: #fff;
-    font-size:20px;
+    color: #333;
+    font-size:17px;
     font-weight: 100;
     letter-spacing: -1px;
     transition: all 0.25s ease;
@@ -551,7 +209,7 @@ section{
 }
 
 .navbar-transparent .navbar-toggle .icon-bar {
-    background-color: #FFF;
+    background-color: #333;
     transition: all 0.25s ease;
 }
 
@@ -560,17 +218,13 @@ section{
 }
 
 #linkedin-link{
-    color: #0099cc;
+    color: #fff;
     margin: -18px 0 0 0;
     opacity: 0.75;
 }
 
-.navbar-small .fa-inverse{
-    color: #333;
-}
-
-.clicked-burger .fa-inverse{
-    color: #333;
+.fa-inverse{
+    color: #333!important;
 }
 
 .navbar-small #linkedin-link{
@@ -596,8 +250,13 @@ section{
     margin-top: 16px;
 }
 
-@media(max-width:992px){
-    .navbar-transparent .nav.navbar-nav.navbar-right li a{
+@media(min-width:768px) and (max-width:992px){
+     .navbar-transparent .nav.navbar-nav.navbar-right li a{
+        font-size:1.3vw;
+    }
+}
+@media(max-width:767px){
+     .navbar-transparent .nav.navbar-nav.navbar-right li a{
         font-size:13px;
     }
     #linkedin-link{
@@ -651,7 +310,7 @@ section{
  #section-1{
      width: 100%;
      height: 100vh;
-     background-image: url('/wp-content/themes/fininsite/assets/img/finance.jpg');
+     background-image: url('/wp-content/themes/fininsite/assets/img/bgbig.jpg');
      background-size: cover;
      overflow: hidden;
      color:#fff;
@@ -664,16 +323,17 @@ section{
  }
 
 #translating{
-    font-size: 6vw;
+    font-size: 4vw;
     display: block;
     letter-spacing: -3px;
     margin-bottom: -6.2%; 
 }
 
 #into{
-    font-size: 8vw;
+    font-size: 4vw;
     display: block;
-    letter-spacing: -6px;
+    padding-top: 32px;
+    letter-spacing: -4px;
 }
 
 #section-1 .filter{
@@ -735,6 +395,14 @@ section{
     }
 }
 
+.bio-img{
+    max-height: 275px;
+}
+@media(max-width:992px){
+    .bio-name{
+        text-align: center;
+    }
+}
 /*------------------- Section 3-----------------------------*/
 
 #section-3{
@@ -776,10 +444,19 @@ section{
     }
 }
 
+.sub-title{
+    font-size: 13px!important;
+    font-weight: 100!important;
+}
+
+#our-promise-list{
+    color:#333;
+    font-size:20px;
+}
 /*------------------ Fourth Section ------------------*/
 
 #section-4{
-    background-image: url('/wp-content/themes/fininsite/assets/img/financial-advisor_bw.jpg');
+    background-image: url(/wp-content/themes/fininsite/assets/img/financial-advisor_bw.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -890,8 +567,7 @@ h6{
     -webkit-box-shadow: none; 
     box-shadow:none; 
 }
-
-.form-horizontal .control-label {
+.control-label {
         color: #fff;
         font-size: 25px;
 }
@@ -902,13 +578,15 @@ h6{
     color: #fff;
 }
 
+.contact-header{
+    color:#fff;
+    margin-top:0px;
+}
+
 @media (min-width: 768px){
-    .form-horizontal .control-label {
-        padding-top: 7px;
-        margin-bottom: 0;
-        text-align: right;
-        color: #fff;
-        font-size: 25px;
+    .control-label {
+       color: #fff;
+       font-size: 25px;
     }
 }
 

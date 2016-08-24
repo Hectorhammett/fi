@@ -52,14 +52,15 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-
             <div class="collapse navbar-collapse" id="navbar-links">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://www.fininsite.com/index.php#about">ABOUT US</a></li>
-                <li><a href="https://www.fininsite.com/index.php#what_we_do">WHAT WE DO</a></li>
-                <li><a href="https://www.fininsite.com/index.php#faq">FAQ</a></li>
-                <li><a href="https://www.fininsite.com/index.php#started">GET STARTED</a></li>
-                <li><a href="https://www.fininsite.com/index.php#blog">BLOG</a></li>
+                <li><a href="https://fininsite.com/index.php#section-1">HOME</a></li>
+                <li><a href="https://fininsite.com/index.php#about">ABOUT US</a></li>
+                <li><a href="https://fininsite.com/index.php#what_we_do">SERVICES</a></li>
+                <li><a href="https://fininsite.com/index.php#faq">CASE STUDY</a></li>
+		<li><a href="https://fininsite.com/index.php#blog">BLOG</a></li>
+                <li><a href="https://fininsite.com/index.php#started">CONTACT</a></li>
+                
                 <li><a href="#" id="linkedin-link">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
@@ -68,7 +69,5 @@
                 </a></li>
             </ul>
             </div><!-- /.navbar-collapse -->
-
-
         </div><!-- /.container-fluid -->
         </nav>

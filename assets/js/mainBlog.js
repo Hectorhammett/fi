@@ -9,3 +9,4 @@ $(window).scroll(function() { // check if scroll event happened
 $('.navbar-toggle').click(function(){
   $(".navbar-fixed-top").toggleClass("clicked-burger");
 })
+

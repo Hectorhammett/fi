@@ -7,17 +7,29 @@
 /* About Section Variables */
 $about_title = get_field('about_title');
 $about_information = get_field('about_information');
+$bio_title_1 = get_field("bio_title_1");
+$bio_image_1 = get_field("bio_image_1");
+$bio_1 = get_field("bio_1");
+$bio_title_2 = get_field("bio_title_2");
+$bio_image_2 = get_field("bio_image_2");
+$bio_2 = get_field("bio_2");
 $about_sub_title = get_field('about_sub_title');
 $about_sub_message = get_field('about_sub_message');
+$text_under_bios = get_field('text_under_bios');
 
 /* WWD Section Variables */
 $wwd_section_title = get_field('wwd_section_title');
 $wwd_section_main_message = get_field('wwd_section_main_message');
 $icon_1_text = get_field('icon_1_text');
+$icon_1_more_info = get_field('icon_1_more_info');
 $icon_2_text = get_field('icon_2_text');
+$icon_2_more_info = get_field('icon_2_more_info');
 $icon_3_text = get_field('icon_3_text');
+$icon_3_more_info = get_field('icon_3_more_info');
 $icon_4_text = get_field('icon_4_text');
+$icon_4_more_info = get_field('icon_4_more_info');
 $wwd_closing_line = get_field('wwd_closing_line');
+$list_of_promises = get_field('list_of_promises');
 
 /* FAQ Section Variables */
 $faq_section_title = get_field('faq_section_title');
@@ -45,6 +57,16 @@ if ( have_posts() ){
 
 get_header(); ?>
 
+
+<!-- modal -->
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close">x</span>
+<p>Thank you! We will be in touch soon.</p>
+</div>
+</div>
+
+
 <!-- Main Body -->
             <!--First section-->
             <section class="section-full" id="section-1">
@@ -71,19 +93,61 @@ get_header(); ?>
                         <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-justify text-muli">
                             <?php echo $about_information; ?>
                         </div>
-                        <div class="col-sm-12 text-center section-footer">
-                            <h1 class="bold"><?php echo $about_sub_title; ?></h1>
-                            <p>
-                                <?php echo $about_sub_message; ?>
-                            </p>
+                        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1 class="bio-name"> <?php echo $bio_title_1; ?> </h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                     <img src="<?php echo $bio_image_1['url']; ?>" class="center-block img-responsive bio-img">
+                                </div>
+                                <div class="col-md-8">
+                                     <p>
+                                        <?php echo $bio_1; ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1 class="bio-name"> <?php echo $bio_title_2; ?> </h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                     <img src="<?php echo $bio_image_2['url']; ?>" class="center-block img-responsive bio-img">
+                                </div>
+                                <div class="col-md-8">
+                                     <p>
+                                       <?php echo $bio_2; ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-justify text-muli">
+                            <?php echo $text_under_bios; ?>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center section-footer">
+                                <h1 class="bold"><?php echo $about_sub_title; ?></h1>
+                                <p>
+                                    <?php echo $about_sub_message; ?>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Second section ends -->
+            </section>                       
 
-
-            <!--Third section-->
+<!--Third section-->
             <section class="section-full " id="section-3">
                 <div id="what_we_do"></div>
                 <div class="container-fluid">
@@ -100,11 +164,17 @@ get_header(); ?>
                                 <p>
                                    <?php echo $icon_1_text; ?>
                                 </p>
+                                <p class="sub-title">
+                                    <?php echo $icon_1_more_info; ?>
+                                </p>
                             </div>
                             <div class="col-md-3 text-center icon-holder">
                                 <img src="<?php bloginfo('template_directory'); ?>/assets/_Icons/Inventory-02.png" class="img-responsive icon center-block"/>
                                 <p class="help-margin">
                                    <?php echo $icon_2_text; ?>
+                                </p>
+                                <p class="sub-title">
+                                    <?php echo $icon_2_more_info; ?>
                                 </p>
                             </div>
                             <div class="col-md-3 text-center icon-holder">
@@ -112,20 +182,35 @@ get_header(); ?>
                                 <p class="help-margin">
                                    <?php echo $icon_3_text; ?>
                                 </p>
+                                <p class="sub-title">
+                                    <?php echo $icon_3_more_info; ?>
+                                </p>
                             </div>
                             <div class="col-md-3 text-center icon-holder">
                                 <img src="<?php bloginfo('template_directory'); ?>/assets/_Icons/reports_copia.png" class="img-responsive icon center-block"/>
                                 <p>
                                    <?php echo $icon_4_text; ?>
                                 </p>
+                                <p class="sub-title">
+                                    <?php echo $icon_4_more_info; ?>
+                                </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
-                         <div class="col-sm-6 col-sm-offset-3 section-footer">
-                            <h2 class="bold"> <?php echo $wwd_closing_line; ?> </h2>
+                        <div class="col-sm-6 col-sm-offset-3 section-footer text-center">
+                            <h2 class="bold"><?php echo $wwd_closing_line; ?></h2>
                         </div> 
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-4">
+                            <p>
+                                <?php echo $list_of_promises; ?>
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <!-- Third section ends -->
