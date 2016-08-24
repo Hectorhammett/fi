@@ -93,7 +93,7 @@ get_header(); ?>
                         <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-justify text-muli">
                             <?php echo $about_information; ?>
                         </div>
-                        
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row">
@@ -103,16 +103,16 @@ get_header(); ?>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                     <img src="<?php echo $bio_image_1['url']; ?>" class="center-block img-responsive bio-img">
+                                        <img src="<?php echo $bio_image_1['url']; ?>" class="center-block img-responsive bio-img">
                                 </div>
                                 <div class="col-md-8">
-                                     <p>
+                                        <p>
                                         <?php echo $bio_1; ?>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                         <div class="col-md-6">
+                            <div class="col-md-6">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <h1 class="bio-name"> <?php echo $bio_title_2; ?> </h1>
@@ -120,11 +120,11 @@ get_header(); ?>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                     <img src="<?php echo $bio_image_2['url']; ?>" class="center-block img-responsive bio-img">
+                                        <img src="<?php echo $bio_image_2['url']; ?>" class="center-block img-responsive bio-img">
                                 </div>
                                 <div class="col-md-8">
-                                     <p>
-                                       <?php echo $bio_2; ?>
+                                        <p>
+                                        <?php echo $bio_2; ?>
                                     </p>
                                 </div>
                             </div>
@@ -135,13 +135,12 @@ get_header(); ?>
                             <?php echo $text_under_bios; ?>
                         </div>
                     </div>
-                        <div class="row">
-                            <div class="col-sm-12 text-center section-footer">
-                                <h1 class="bold"><?php echo $about_sub_title; ?></h1>
-                                <p>
-                                    <?php echo $about_sub_message; ?>
-                                </p>
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center section-footer">
+                            <h1 class="bold"><?php echo $about_sub_title; ?></h1>
+                            <p>
+                                <?php echo $about_sub_message; ?>
+                            </p>
                         </div>
                     </div>
                 </div>
