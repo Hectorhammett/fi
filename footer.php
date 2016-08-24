@@ -13,7 +13,7 @@
 
 <?php 
 if(isset($_POST['submit'])){
-    $to = "beltran@fininsite.com"; // this is your Email address
+    $to = "hector.mendoza@mitechnologiesinc.com"; // this is your Email address
     $from = $_POST['from']; // this is the sender's Email address
     $name = $_POST['clientname'];
     $subject = $_POST['subject'];
