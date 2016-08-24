@@ -19,6 +19,7 @@
 
 <link rel='stylesheet' href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap/css/bootstrap.min.css">
 <link rel='stylesheet' href="<?php bloginfo('stylesheet_directory'); ?>/assets/font-awesome/font-awesome.min.css"/>
+<link rel='stylesheet' href="<?php bloginfo('stylesheet_directory'); ?>/assets/sa/sa.css"/>
 <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
